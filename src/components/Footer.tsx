@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p>
-        <span className={styles.span}>TODO LIST</span> @ 2024
+        <span>TODO LIST</span> @ 2024
       </p>
     </footer>
   );
