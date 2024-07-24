@@ -1,10 +1,11 @@
+import styles from "./Header.module.css";
+
 const Header = () => {
-    return (
-      <header>
-        <h1>TODO LIST</h1>
-      </header>
-    );
-  };
-  
-  export default Header;
-  
+  return (
+    <header className={styles.header}>
+      <h1>TODO LIST</h1>
+    </header>
+  );
+};
+
+export default Header;
