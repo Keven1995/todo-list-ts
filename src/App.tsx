@@ -1,23 +1,33 @@
 // css
+import { useState } from "react";
 import styles from "./App.module.css";
 // Components
 import Footer from "./components/Footer";
 import Formulario from "./components/Formulario";
 import Header from "./components/Header";
-import List from "./components/List";
+import TaskList from "./components/TaskList";
+
+// Interfaces
+import { ITask } from "./interfaces/Task";
 
 function App() {
+  const [taskList, setTaskList] = useState<ITask[]>([]);
+
   return (
     <div>
       <Header />
       <main className={styles.main}>
         <div>
           <h2>O que você vai fazer?</h2>
-          <Formulario btnText="Criar Tarefa" />
+          <Formulario
+            btnText="Criar Tarefa"
+            taskList={taskList}
+            setTaskList={setTaskList}
+          />
         </div>
         <div>
           <h2>Suas tarefas:</h2>
-          <List />
+          <TaskList taskList={taskList} />
         </div>
       </main>
       <Footer />
