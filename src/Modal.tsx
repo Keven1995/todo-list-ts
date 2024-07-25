@@ -1,4 +1,5 @@
 // CSS
+import React from "react";
 import styles from "./Modal.module.css";
 interface Props {
   children: React.ReactNode;
@@ -6,7 +7,8 @@ interface Props {
 
 const Modal = ({ children }: Props) => {
   const closeModal = (e: React.MouseEvent): void => {
-    const modal = document.querySelector("modal");
+    e.preventDefault();
+    const modal = document.querySelector("#modal");
     modal!.classList.add("hide");
   };
 

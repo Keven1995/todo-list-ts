@@ -66,16 +66,18 @@ const Formulario = ({
           placeholder="Título da tarefa"
           onChange={handleChange}
           value={title}
+          required
         />
       </div>
       <div className={styles.input_container}>
         <label htmlFor="difficulty">Dificuldade:</label>
         <input
-          type="text"
+          type="number"
           name="difficulty"
           placeholder="Dificuldade da tarefa"
           onChange={handleChange}
           value={difficulty}
+          required
         />
       </div>
       <input type="submit" value={btnText} />
