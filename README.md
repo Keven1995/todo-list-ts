@@ -1,6 +1,6 @@
 # Lista de Tarefas
 
-Este é um projeto simples de Lista de Tarefas desenvolvido com TypeScript, React e Vite. O objetivo deste projeto é fornecer uma interface intuitiva para gerenciar tarefas, permitindo adicionar, visualizar e remover tarefas.
+Este é um projeto de Lista de Tarefas desenvolvido com TypeScript, React e Vite. O objetivo deste projeto é fornecer uma interface intuitiva para gerenciar tarefas, permitindo adicionar, visualizar e remover tarefas.
 
 ## Tecnologias Utilizadas
 
